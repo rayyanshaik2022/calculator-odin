@@ -3,14 +3,19 @@
     --secondary-bg-color: #292d36;
     --primary-text-color: white;
     --secondary-text-color: #22252d;
+    --tertiary-text-color: #dadbdc;
     --green-text-color: #26fad3;
     --red-text-coor: #eb6666;
+    --icon-inactive: #6c6e74;
+    --icon-active: #eeeeef;
+    --btn-color: #272b33;
+    --btn-depth: #24272f;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -25,12 +30,14 @@ body {
 }
 
 #calc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     margin-top: auto;
-
     width: 450px;
     height: 650px;
-
     min-width: 450px;
     min-height: 650px;
 
@@ -43,11 +50,135 @@ footer {
     height: 30px;
 
     text-align: center;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
 }
 
 a {
     color: var(--secondary-text-color);
     text-decoration: underline var(--green-text-color);
     text-decoration-thickness: 2px;
+}
+
+#mode-switch-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--secondary-bg-color);
+    height: 40px;
+    width: 100px;
+
+    border-radius: 16px;
+
+    margin-top: 20px;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+
+    filter: invert(50%) sepia(7%) saturate(300%) hue-rotate(187deg)
+        brightness(83%) contrast(87%);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.active-icon {
+    filter: invert(90%) sepia(0%) saturate(1791%) hue-rotate(199deg)
+        brightness(110%) contrast(90%);
+}
+
+#number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 160px;
+    width: 100%;
+
+    margin-bottom: -50px;
+    gap: 10px;
+}
+
+#btn-card {
+    height: 340px;
+    width: 100%;
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Max number size: 12 digits */
+#number-display {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+
+    padding-right: 25px;
+}
+
+#number-history {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--tertiary-text-color);
+
+    padding-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-row {
+    display: flex;
+    gap: 16px;
+}
+
+.num-btn {
+    height: 48px;
+    width: 48px;
+
+    background-color: var(--btn-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    user-select: none;
+
+    border-radius: 6px;
+}
+
+.btn-green {
+    color: var(--green-text-color);
+    font-weight: 400;
+}
+
+.btn-red {
+    color: var(--red-text-coor);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.num-btn:hover {
+    background-color: var(--btn-depth);
+    cursor: pointer;
 }

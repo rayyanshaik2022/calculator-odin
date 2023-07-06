@@ -15,10 +15,65 @@
     </head>
     <body>
         <div id="calc-container">
-            <div class="mode-switch-container"></div>
-            <div class="number-container"></div>
-            <div class="btn-container"></div>
+            <div id="mode-switch-container">
+                <img src="./assets/sun.png" class="icon" draggable="false"/>
+                <img src="./assets/moon.png" class="icon active-icon" draggable="false"/>
+            </div>
+            <div id="number-container">
+                <div id="number-history">
+                    <div class="prev-calculation">
+                        240,333,333,333 x 240,333,333,333
+                    </div>
+                    <div class="prev-calculation">
+                        333,333,333,333 x 240,333,333,333
+                    </div>
+                    <div class="prev-calculation">
+                        240,333,333,333 x 240,333,333,333
+                    </div>
+                    <div class="prev-calculation">
+                        240,333,333,333 x 240,333,333,333
+                    </div>
+                </div>
+                <div id="number-display">0</div>
+            </div>
+            <div id="btn-card">
+                <div id="btn-container">
+                    <div class="card-row">
+                        <div class="num-btn btn-green">AC</div>
+                        <div class="num-btn btn-green">⁺∕₋</div>
+                        <div class="num-btn btn-green">%</div>
+                        <div class="num-btn btn-red">÷</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="num-btn">7</div>
+                        <div class="num-btn">8</div>
+                        <div class="num-btn">9</div>
+                        <div class="num-btn btn-red">×</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="num-btn">4</div>
+                        <div class="num-btn">5</div>
+                        <div class="num-btn">6</div>
+                        <div class="num-btn btn-red">-</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="num-btn">1</div>
+                        <div class="num-btn">2</div>
+                        <div class="num-btn">3</div>
+                        <div class="num-btn btn-red">+</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="num-btn">↺</div>
+                        <div class="num-btn">0</div>
+                        <div class="num-btn">.</div>
+                        <div class="num-btn btn-red">=</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
-    <footer>Built by <a href="https://github.com/rayyanshaik2022">Rayyan Shaik</a> • Design by Lucia Scott</footer>
+    <footer>
+        Built by <a href="https://github.com/rayyanshaik2022">Rayyan Shaik</a> •
+        Design by Lucia Scott
+    </footer>
 </html>
