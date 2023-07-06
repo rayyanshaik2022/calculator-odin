@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculator</title>
         <link rel="stylesheet" href="./styles.css" />
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
 
         <!-- Fonts -->
         <link
@@ -16,20 +16,11 @@
     <body>
         <div id="calc-container">
             <div id="mode-switch-container">
-                <img src="./assets/sun.png" class="icon" draggable="false"/>
-                <img src="./assets/moon.png" class="icon active-icon" draggable="false"/>
+                <img src="./assets/sun.png" id="light-btn" class="icon" draggable="false"/>
+                <img src="./assets/moon.png" id="dark-btn" class="icon active-icon" draggable="false"/>
             </div>
             <div id="number-container">
                 <div id="number-history">
-                    <div class="prev-calculation">
-                        240,333,333,333 x 240,333,333,333
-                    </div>
-                    <div class="prev-calculation">
-                        333,333,333,333 x 240,333,333,333
-                    </div>
-                    <div class="prev-calculation">
-                        240,333,333,333 x 240,333,333,333
-                    </div>
                     <div class="prev-calculation">
                         240,333,333,333 x 240,333,333,333
                     </div>
@@ -45,28 +36,28 @@
                         <div class="num-btn btn-red">÷</div>
                     </div>
                     <div class="card-row">
-                        <div class="num-btn">7</div>
-                        <div class="num-btn">8</div>
-                        <div class="num-btn">9</div>
-                        <div class="num-btn btn-red">×</div>
+                        <button id="num7" class="num-btn">7</button>
+                        <button id="num8" class="num-btn">8</button>
+                        <button id="num9" class="num-btn">9</button>
+                        <button class="num-btn btn-red">×</button>
                     </div>
                     <div class="card-row">
-                        <div class="num-btn">4</div>
-                        <div class="num-btn">5</div>
-                        <div class="num-btn">6</div>
-                        <div class="num-btn btn-red">-</div>
+                        <buttonbutton id="num4" class="num-btn">4</buttonbutton>
+                        <buttonbutton id="num5" class="num-btn">5</buttonbutton>
+                        <buttonbutton id="num6" class="num-btn">6</buttonbutton>
+                        <buttonbutton class="num-btn btn-red">-</buttonbutton>
                     </div>
                     <div class="card-row">
-                        <div class="num-btn">1</div>
-                        <div class="num-btn">2</div>
-                        <div class="num-btn">3</div>
-                        <div class="num-btn btn-red">+</div>
+                        <button id="num1" class="num-btn">1</button>
+                        <button id="num2" class="num-btn">2</button>
+                        <button id="num3" class="num-btn">3</button>
+                        <button class="num-btn btn-red">+</button>
                     </div>
                     <div class="card-row">
-                        <div class="num-btn">↺</div>
-                        <div class="num-btn">0</div>
-                        <div class="num-btn">.</div>
-                        <div class="num-btn btn-red">=</div>
+                        <button class="num-btn">↺</button>
+                        <button class="num-btn">0</button>
+                        <button class="num-btn">.</button>
+                        <button class="num-btn btn-red">=</button>
                     </div>
                 </div>
             </div>

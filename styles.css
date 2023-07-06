@@ -10,6 +10,30 @@
     --icon-active: #eeeeef;
     --btn-color: #272b33;
     --btn-depth: #24272f;
+
+    --primary-bg-color-dark: #22252d;
+    --secondary-bg-color-dark: #292d36;
+    --primary-text-color-dark: white;
+    --secondary-text-color-dark: #22252d;
+    --tertiary-text-color-dark: #dadbdc;
+    --green-text-color-dark: #26fad3;
+    --red-text-coor-dark: #eb6666;
+    --icon-inactive-dark: #6c6e74;
+    --icon-active-dark: #eeeeef;
+    --btn-color-dark: #272b33;
+    --btn-depth-dark: #24272f;
+
+    --primary-bg-color-light: #ffffff;
+    --secondary-bg-color-light: #f9f9f9;
+    --primary-text-color-light: #292d36;
+    --secondary-text-color-light: #e6e9ef;
+    --tertiary-text-color-light: #292e37;
+    --green-text-color-light: #23cfaf;
+    --red-text-coor-light: #eb6666;
+    --icon-inactive-light: #dedede;
+    --icon-active-light: #383c44;
+    --btn-color-light: #f4f2f2;
+    --btn-depth-light: #ececec;
 }
 
 * {
@@ -27,6 +51,7 @@ body {
     background-color: #f4f2f2;
 
     min-height: 100vh;
+    
 }
 
 #calc-container {
@@ -43,6 +68,8 @@ body {
 
     background-color: var(--primary-bg-color);
     border-radius: 20px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 footer {
@@ -77,17 +104,36 @@ a {
     height: 20px;
     width: 20px;
 
-    filter: invert(50%) sepia(7%) saturate(300%) hue-rotate(187deg)
-        brightness(83%) contrast(87%);
+    user-select: none;
+
+    transition: all 0.15s ease 0s;
 }
 
 .icon:hover {
     cursor: pointer;
+    transform: scale(1.10);
 }
 
-.active-icon {
+.icon:active {
+    transform: scale(1.025);
+}
+
+#light-btn {
+    filter: invert(18%) sepia(10%) saturate(849%) hue-rotate(182deg) brightness(93%) contrast(82%)
+}
+
+#light-btn.active-icon {
     filter: invert(90%) sepia(0%) saturate(1791%) hue-rotate(199deg)
         brightness(110%) contrast(90%);
+}
+
+#dark-btn {
+    filter: invert(50%) sepia(7%) saturate(300%) hue-rotate(187deg)
+    brightness(83%) contrast(87%);
+}
+
+#dark-btn.active-icon {
+    filter: invert(99%) sepia(1%) saturate(1009%) hue-rotate(329deg) brightness(112%) contrast(74%);
 }
 
 #number-container {
@@ -165,6 +211,7 @@ a {
     user-select: none;
 
     border-radius: 6px;
+    border-style: none;
 }
 
 .btn-green {
