@@ -294,7 +294,7 @@ function updateHistory() {
         const nextItem = document.createElement("div");
         nextItem.setAttribute("class", "prev-calculation");
         nextItem.style["opacity"] = `${100 - opacityModifier * i}%`;
-        nextItem.innerHTML = `${history[i]["a"]} <span>${history[i]["operator"]}</span> ${history[i]["b"]}`;
+        nextItem.innerHTML = `${history[i]["a"]} <span class="operator-text">${history[i]["operator"]}</span> ${history[i]["b"]}`;
 
         numHistory.appendChild(nextItem);
     }
