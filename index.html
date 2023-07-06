@@ -16,48 +16,66 @@
     <body>
         <div id="calc-container">
             <div id="mode-switch-container">
-                <img src="./assets/sun.png" id="light-btn" class="icon" draggable="false"/>
-                <img src="./assets/moon.png" id="dark-btn" class="icon active-icon" draggable="false"/>
+                <img
+                    src="./assets/sun.png"
+                    id="light-btn"
+                    class="icon"
+                    draggable="false"
+                />
+                <img
+                    src="./assets/moon.png"
+                    id="dark-btn"
+                    class="icon active-icon"
+                    draggable="false"
+                />
             </div>
             <div id="number-container">
-                <div id="number-history">
-                    <div class="prev-calculation">
-                        240,333,333,333 x 240,333,333,333
-                    </div>
-                </div>
+                <div id="number-history"></div>
                 <div id="number-display">0</div>
             </div>
             <div id="btn-card">
                 <div id="btn-container">
                     <div class="card-row">
-                        <div class="num-btn btn-green">AC</div>
-                        <div class="num-btn btn-green">⁺∕₋</div>
-                        <div class="num-btn btn-green">%</div>
-                        <div class="num-btn btn-red">÷</div>
+                        <div id="ac-btn" class="calc-btn btn-green">AC</div>
+                        <div id="pm-btn" class="calc-btn btn-green">⁺∕₋</div>
+                        <div id="mod-btn" class="calc-btn btn-green operator"
+                        >%</div>
+                        <div id="div-btn" class="calc-btn btn-red operator"
+                        >÷</div>
                     </div>
                     <div class="card-row">
-                        <button id="num7" class="num-btn">7</button>
-                        <button id="num8" class="num-btn">8</button>
-                        <button id="num9" class="num-btn">9</button>
-                        <button class="num-btn btn-red">×</button>
+                        <button id="num7" class="calc-btn num-btn">7</button>
+                        <button id="num8" class="calc-btn num-btn">8</button>
+                        <button id="num9" class="calc-btn num-btn">9</button>
+                        <button id="mult-btn" class="calc-btn btn-red operator">×</button>
                     </div>
                     <div class="card-row">
-                        <buttonbutton id="num4" class="num-btn">4</buttonbutton>
-                        <buttonbutton id="num5" class="num-btn">5</buttonbutton>
-                        <buttonbutton id="num6" class="num-btn">6</buttonbutton>
-                        <buttonbutton class="num-btn btn-red">-</buttonbutton>
+                        <buttonbutton id="num4" class="calc-btn num-btn"
+                            >4</buttonbutton
+                        >
+                        <buttonbutton id="num5" class="calc-btn num-btn"
+                            >5</buttonbutton
+                        >
+                        <buttonbutton id="num6" class="calc-btn num-btn"
+                            >6</buttonbutton
+                        >
+                        <buttonbutton
+                            id="sub-btn"
+                            class="calc-btn btn-red operator"
+                            >-</buttonbutton
+                        >
                     </div>
                     <div class="card-row">
-                        <button id="num1" class="num-btn">1</button>
-                        <button id="num2" class="num-btn">2</button>
-                        <button id="num3" class="num-btn">3</button>
-                        <button class="num-btn btn-red">+</button>
+                        <button id="num1" class="calc-btn num-btn">1</button>
+                        <button id="num2" class="calc-btn num-btn">2</button>
+                        <button id="num3" class="calc-btn num-btn">3</button>
+                        <button id="plus-btn" class="calc-btn btn-red operator">+</button>
                     </div>
                     <div class="card-row">
-                        <button class="num-btn">↺</button>
-                        <button class="num-btn">0</button>
-                        <button class="num-btn">.</button>
-                        <button class="num-btn btn-red">=</button>
+                        <button id="redo-btn" class="calc-btn">↺</button>
+                        <button class="calc-btn num-btn">0</button>
+                        <button id="dot-btn" class="calc-btn">.</button>
+                        <button id="eq-btn" class="calc-btn btn-red">=</button>
                     </div>
                 </div>
             </div>

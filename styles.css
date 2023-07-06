@@ -178,7 +178,7 @@ a {
     padding-right: 25px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3px;
 }
 
@@ -194,7 +194,7 @@ a {
     gap: 16px;
 }
 
-.num-btn {
+.calc-btn {
     height: 48px;
     width: 48px;
 
@@ -211,7 +211,7 @@ a {
     user-select: none;
 
     border-radius: 6px;
-    border-style: none;
+    border: 1px solid var(--btn-color);
 }
 
 .btn-green {
@@ -219,13 +219,27 @@ a {
     font-weight: 400;
 }
 
+.btn-green.active-operator {
+    border: 1px solid var(--green-text-color);
+    filter: brightness(140%);
+}
+
 .btn-red {
     color: var(--red-text-coor);
     font-size: 25px;
     font-weight: 400;
 }
+.btn-red.active-operator {
+    border: 1px solid var(--red-text-coor);
+    filter: brightness(140%);
+}
 
-.num-btn:hover {
+
+.calc-btn:hover {
     background-color: var(--btn-depth);
     cursor: pointer;
+}
+
+.prev-calculation {
+    text-align: right;
 }
