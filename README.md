@@ -1,7 +1,5 @@
 # calculator-odin
 
-## Credits
-
 ## Live Demo Link
 [Click Here for demo](https://rayyanshaik2022.github.io/calculator-odin/)
 
